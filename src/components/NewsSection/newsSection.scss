@@ -1,0 +1,100 @@
+@import '../../styles/var';
+.news-section{
+  background-color: #e6e6e6;
+  //.wrapper{}
+  .news-section-container{
+    position: relative;        
+    padding: 29px $pad-x 56px;
+    // padding: 29px $pad-x-xs 56px;
+    // @include breakpoint(md){
+    //   padding: 29px $pad-x-md 56px;
+    // }
+    // @include breakpoint(xl){
+    //   padding: 29px $pad-x-xl 56px;
+    // }    
+  }
+  .news-title{
+    font-family: $global-font-family;
+    font-size: 20px;
+    font-weight: 800;    
+    line-height: 1;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #6d1028;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .news-text{
+    //font-family: Myriad Pro;
+    font-family: $global-font-family;
+    font-size: 18px;
+    font-weight: 400;    
+    line-height: 1.61;    
+    text-align: center;
+    color: #6c585c;
+    margin-bottom: 0;   
+  }
+  .form-container{
+    position: absolute;
+    width: 461px;
+    max-width: 90%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  //.news-form{}
+  .input-group{    
+    position: relative;        
+    .news-submit-button{
+      position: absolute;
+      right: 0;
+      top: 0;      
+      @include outline(0);
+      cursor: pointer;
+      border: none;
+      //width: 132px;
+      height: 62px;  
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; 
+      // padding: 0 12px;
+      // @include breakpoint(xl){ 
+        padding: 0 40px;
+      // }
+      font-family: $global-font-family;
+      font-size: 12px;
+      font-weight: 700;  
+      text-transform: uppercase;
+      background-color: #ff6584;
+      color: #fff;
+      &:link, &:visited{
+        background-color: #ff6584;
+        color: #fff;
+      }
+      &:hover, &:active, &:active:hover{
+        background-color: #bc1d47;
+        color: #fff;
+      }
+    }
+  }
+  .news-input-control{
+    @include outline(0);
+    height: 62px;
+    width: 100%;     
+    padding: 0 164px 0 32px;
+    background-color: #F4F4F4;
+    border: none;
+    font-family: $global-font-family;
+    font-size: 12px;
+    font-weight: 700;    
+    letter-spacing: 1.2px;
+    color: #808080;
+  }
+  .news-form-message{
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    left: 0;    
+    text-align: center;
+  }
+}

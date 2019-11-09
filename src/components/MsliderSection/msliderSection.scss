@@ -1,0 +1,88 @@
+@import '../../styles/var';
+.mslider-section{   
+  position: relative;
+  background: #61e6cf url('../../assets/img/m-slider-bg.jpg') no-repeat 50% 50%/cover; 
+  background-blend-mode: overlay; 
+  //.wrapper{}
+  .mslider-section-container{
+    position: relative;       
+    padding: 0;    
+  }
+  .mslide-container{
+    min-height: 256px;
+    @include breakpoint(sm-down){
+      padding: 32px 15px;
+    }
+    @include breakpoint(md){
+      padding: 32px 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .percent-container,.slide-text-container{  
+    @include breakpoint(sm-down){  
+      padding: 0 15px; 
+    }   
+    @include breakpoint(md){
+      padding: 0 25px;
+    }
+    @include breakpoint(xl){
+      padding: 0 35px;
+    }
+  }  
+  .percent-text{
+    font-family: $global-font-family;
+    display: block;
+    @include breakpoint(sm-down){
+      font-size: 60px; 
+      text-align: center;
+      margin-bottom: 14px;
+    }   
+    @include breakpoint(md){
+      font-size: 100px;
+    } 
+    @include breakpoint(xl){
+      font-size: 165px;
+    }    
+    font-weight: 700;    
+    line-height: 1;    
+    color: #401abb;
+  }
+  .slide-title{
+    font-family: $global-font-family;
+    @include breakpoint(sm-down){
+      font-size: 18px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    @include breakpoint(md){
+      font-size: 24px;
+      margin-bottom: 14px;
+    } 
+    @include breakpoint(xl){
+      font-size: 32px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;    
+    .accent-text{
+      color: #401abb;
+    }
+  }
+  .slide-text{
+    font-family: $global-font-family;
+    font-size: 12px;
+    @include breakpoint(md){
+      font-size: 14px;
+    }
+    @include breakpoint(xl){
+      font-size: 16px;
+    }
+    font-weight: 500;    
+    line-height: 1.38;    
+    color: #3b2e65;
+  }
+}

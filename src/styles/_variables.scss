@@ -1,0 +1,56 @@
+// font
+$font_default: "Open Sans", Helvetica, sans-serif;
+
+$global-font-family: 'Raleway', sans-serif;
+$secondary-font-family: 'Raleway', sans-serif;
+
+$global-font-size: 16px;
+
+// color
+$color_default: rgba(0, 0, 0, 0.95);
+$color_primary: #000000;
+$text-color: $color_default;
+$text-color-inverted: #ffffff;
+$red: #ee1d47;
+
+//width of page
+$width-site: 1196px;
+//$width-site: unset;
+$pad-x: 15px;
+// $pad-x-xs: 30px;
+// $pad-x-sm: 30px;
+// $pad-x-md: 30px;
+// $pad-x-lg: 30px;
+$pad-x-xl: 15px;
+
+//base of BS4 breakpoints
+$screen-xs:					0;
+$xs:						$screen-xs;
+$screen-sm:					576px;
+$sm:						$screen-sm;
+$screen-md:					768px;
+$md:						$screen-md;
+$screen-lg:					992px;
+$lg:						$screen-lg;
+$screen-xl:					1200px;
+$xl:						$screen-xl;
+$screen-xxl:				1920px;
+$xxl:						$screen-xxl;
+
+
+//headings
+$map-heading-size: (  
+  h1: 32px,
+  h2: 28px,
+  h3: 20.5px,
+  h4: 16px,
+  h5: 13px, 
+  h6: 10px, 
+);
+$scale-heading-for-xs:  1;
+$scale-heading-for-sm:  1;
+$scale-heading-for-md:  1;
+
+$header-height: 85px;
+$logo-width: 142px;
+$nav-item-gap: 56px;

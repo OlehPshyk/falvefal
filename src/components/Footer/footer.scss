@@ -1,0 +1,130 @@
+@import '../../styles/var';
+.footer{
+  background-color: $red;
+  //.wrapper{}
+  .footer-container{ 
+    padding: 83px $pad-x 32px;
+    // padding: 83px $pad-x-xs 32px;
+    // @include breakpoint(md){
+    //   padding: 83px $pad-x-md 32px;
+    // }   
+    // @include breakpoint(xl){
+    //   padding: 83px $pad-x-xl 32px;
+    // }    
+    max-width: 1196px;
+    margin: 0 auto;
+  }
+  .footer-grid{
+    display: grid;
+    grid-template-columns: auto;
+    @include breakpoint(xl){
+      grid-template-columns: repeat(3, 1fr);
+    }
+    grid-gap: 20px 40px;
+  }  
+  .first-f{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 35px 80px;
+    @include breakpoint(xl){      
+      grid-gap: 42px 20px;
+      justify-content: unset;
+    }
+    @include breakpoint(sm){
+      grid-template-columns: repeat(2, auto);
+    }    
+  }  
+  .first-f-list-1,.first-f-list-2,.first-f-socials{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .first-f-list-item{
+    margin-bottom: 6px;
+  }
+  .first-f-list-link{
+    font-family: $global-font-family;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;    
+    letter-spacing: 0.8px;    
+    color: #6d1028;
+    text-transform: uppercase;
+    // &:hover{
+      
+    // }
+  }
+  .first-f-socials{
+    justify-self: center;
+    @include breakpoint(xl){
+      justify-self: flex-start;
+    }
+    @include breakpoint(sm){
+      grid-column: 1/3;
+    }
+    display: flex;
+    .social-item{
+      &:not(:last-child){
+        margin-right: 15px;
+        @include breakpoint(sm){
+          margin-right: 30px;
+        }
+      }
+    }
+    .social-link{
+      font-family: $global-font-family;
+      font-size: 12px;
+      @include breakpoint(sm){
+        font-size: 14.5px;
+      }
+      font-weight: 700;      
+      letter-spacing: 1.2px;      
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  .second-f{
+    justify-self: center;
+  }
+  .second-f-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .second-f-item{
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+  .third-f{
+    text-align: center;
+  }
+  .third-f-img-box-1{
+    padding-top: 5px;
+    margin-bottom: 18px;
+  }
+  .third-f-text-1{
+    display: block;
+    font-family: $global-font-family;
+    font-size: 14.5px;
+    font-weight: 700;    
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }  
+  .third-f-img-box-2{
+    margin-bottom: 30px;
+  }
+  .copyright{
+    display: block;
+    font-family: $global-font-family;
+    font-size: 14.5px;
+    font-weight: 700;    
+    letter-spacing: 0.4px;    
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

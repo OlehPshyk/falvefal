@@ -1,0 +1,21 @@
+@import './var';
+.App {  
+  min-height: 100vh;
+  background-color: #666;    
+  &.min100vh{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .main{
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      .flexto100vh{
+        flex: 1 1 auto;
+      }
+    }
+  }
+  .main{
+    padding-top: $header-height;
+  }
+}
